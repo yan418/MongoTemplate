@@ -1,0 +1,79 @@
+
+use coll
+
+db.comment.insert({
+    _id:'2000',
+	articleid:'1000',
+	content:'qq',
+	userid:'1004',
+	nickname:'船长',
+	likenum:NumberInt(100),
+	replynum:NumberInt(0),
+	state:'1',
+	parebtid:null
+})
+
+
+
+db.comment.insert([
+	{
+		articleid:'1001',
+		content:'多喝点热水',
+		userid:'1004',
+		nickname:'船长',
+		likenum:NumberInt(100),
+		replynum:NumberInt(0),
+		state:'1',
+		parebtid:null
+	},
+	{
+		articleid:'1001',
+		content:'别感冒',
+		userid:'1004',
+		nickname:'船长',
+		likenum:NumberInt(75),
+		replynum:NumberInt(10),
+		state:'1',
+		parebtid:'1001'
+	},
+	{
+		articleid:'1002',
+		content:'文章2222',
+		userid:'1005',
+		nickname:'人物2号',
+		likenum:NumberInt(81),
+		replynum:NumberInt(0),
+		state:'1',
+		parebtid:null
+	},
+	{
+		articleid:'1003',
+		content:'文章3333',
+		userid:'1006',
+		nickname:'人物3号',
+		likenum:NumberInt(24),
+		replynum:NumberInt(2),
+		state:'1',
+		parebtid:null
+	},
+	{
+		articleid:'1004',
+		content:'文章444',
+		userid:'1007',
+		nickname:'人物4号',
+		likenum:NumberInt(8),
+		replynum:NumberInt(0),
+		state:'1',
+		parebtid:null
+	},
+	{
+		articleid:'1005',
+		content:'文章5555',
+		userid:'1008',
+		nickname:'人物5号',
+		likenum:NumberInt(56),
+		replynum:NumberInt(0),
+		state:'1',
+		parebtid:null
+	}
+])

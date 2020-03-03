@@ -1,0 +1,9 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    #mongodb数据源配置
+    mongodb:
+      uri: mongodb://localhost:27017/coll
+      #uri: mongodb://userName:root@localhost:27017/coll?authSource=admin&authMechanism=SCRAM-SHA-1
